@@ -12,6 +12,9 @@ public class LZWencode {
 	}
 	//this.printTable();
 	Iterator<ArrayList<Integer>> itr = table.iterator();
+	while(itr.hasNext()) {
+	    System.out.println(itr.next());
+	}
 	
     }
 
