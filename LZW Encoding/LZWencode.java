@@ -67,7 +67,7 @@ public class LZWencode {
    
 	LZWencode lzw = new LZWencode();
 	output = lzw.encode(input);
-	//lzw.printTable();
 	System.out.println(output);
+	//lzw.printTable();
     }
 }
