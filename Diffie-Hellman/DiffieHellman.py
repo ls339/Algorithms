@@ -9,13 +9,15 @@ def sharedSecret(secretKey,publicKey):
 
 def isPrime(n):
     for x in range(2,int(math.sqrt(n))+1):
-        if (n % x) == 0 :
+        if n % x == 0 :
             return 0
     return 1
 
 p = int(input('Enter a prime number p '))
-if (not isPrime(p)):
+if not isPrime(p):
     print("not a prime number")
+    exit()
+
 g = int(input('Enter a base number g '))
 a = 6 # Alice's secret key.
 b = 15 # Bob's secret key.
